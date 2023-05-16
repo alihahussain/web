@@ -31,7 +31,7 @@ export default function Sidebar()
             <span className="sidebarListItemText">Questions</span>
           </li>
           <li className="sidebarListItem">
-            <WorkOutline className="sidebarIcon" />
+            <WorkOutline className="sidebarIcon" /> 
             <span className="sidebarListItemText">Jobs</span>
           </li>
         </ul>
