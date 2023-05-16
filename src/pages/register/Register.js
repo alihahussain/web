@@ -1,7 +1,7 @@
 import "./register.css";
 import React from "react";
 
-export default function Register() {
+export default function Register() { 
   return (
     <div className="login">
       <div className="loginWrapper">
