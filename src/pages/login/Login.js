@@ -1,7 +1,7 @@
 import React from "react";
 import "./login.css";
 
-function Login() {
+function Login() { 
   return (
       <div className="login">
       <div className="loginWrapper">
