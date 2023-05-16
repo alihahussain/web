@@ -6,42 +6,42 @@ export const Users = [
     },
     {
       id:2,
-      profilePicture: "assets/profiles/abdullah.jpeg",
+      profilePicture: "profiles/abdullah.jpeg",
       username: "Abdullah Sohail",
     },
     {
       id:3,
-      profilePicture: "assets/profiles/aliha.jpeg",
+      profilePicture: "profiles/aliha.jpeg",
       username: "Seemal Arif",
     },
     {
       id:4,
-      profilePicture: "assets/profiles/sarah.jpeg",
+      profilePicture: "profiles/sarah.jpeg",
       username: "Sarah Rafi",
     },
     {
       id:5,
-      profilePicture: "assets/profiles/faiza.jpeg",
+      profilePicture: "profiles/faiza.jpeg",
       username: "Faiza Azam",
     },
     {
       id:6,
-      profilePicture: "assets/profiles/osama.jpeg",
+      profilePicture: "profiles/osama.jpeg",
       username: "Osama Zahid",
     },
     {
       id:7,
-      profilePicture: "assets/profiles/hassan.jpeg",
+      profilePicture: "profiles/hassan.jpeg",
       username: "Hassan Shahzad",
     },
     {
       id:8,
-      profilePicture: "assets/profiles/mohsin.jpeg",
+      profilePicture: "profiles/mohsin.jpeg",
       username: "Mohsin Khalid",
     },
     {
       id:9,
-      profilePicture: "assets/profiles/mahnoor.jpeg",
+      profilePicture: "profiles/mahnoor.jpeg",
       username: "Mahnoor Amjad",
     },
     {
@@ -55,7 +55,7 @@ export const Users = [
     {
       id: 1,
       desc: "Hiring Alert!!",
-      photo: "assets/posts/hire1.jpeg",
+      photo: "posts/hire1.jpeg",
       date: "5 mins ago",
       userId: 1,
       like: 32,
@@ -63,7 +63,7 @@ export const Users = [
     },
     {
       id: 2,
-      photo: "assets/posts/hire2.jpeg",
+      photo: "posts/hire2.jpeg",
       date: "15 mins ago",
       userId: 2,
       like: 2,
@@ -72,7 +72,7 @@ export const Users = [
     {
       id: 3,
       desc: "Every moment is a fresh beginning.",
-      photo: "assets/posts/hire3.jpeg",
+      photo: "posts/hire3.jpeg",
       date: "1 hour ago",
       userId: 3,
       like: 61,
@@ -80,7 +80,7 @@ export const Users = [
     },
     {
       id: 4,
-      photo: "assets/posts/hire4.jpeg",
+      photo: "posts/hire4.jpeg",
       date: "4 hours ago",
       userId: 4,
       like: 7,
@@ -88,7 +88,7 @@ export const Users = [
     },
     {
       id: 5,
-      photo: "assets/posts/hire5.jpg",
+      photo: "posts/hire5.jpg",
       date: "5 hours ago",
       userId: 5,
       like: 23,
@@ -96,7 +96,7 @@ export const Users = [
     },
     {
       id: 6,
-      photo: "assets/posts/hire6.jpg",
+      photo: "posts/hire6.jpg",
       date: "1 day ago",
       userId: 6,
       like: 44,
@@ -105,7 +105,7 @@ export const Users = [
     {
       id: 7,
       desc: "Associate Software engineers Alert!!.",
-      photo: "assets/posts/hire7.jpg",
+      photo: "posts/hire7.jpg",
       date: "2 days ago",
       userId: 7,
       like: 52,
@@ -113,7 +113,7 @@ export const Users = [
     },
     {
       id: 8,
-      photo: "assets/posts/hire8.jpg",
+      photo: "posts/hire8.jpg",
       date: "3 days ago",
       userId: 8,
       like: 15,
@@ -130,7 +130,7 @@ export const Users = [
     },
     {
       id: 10,
-      photo: "assets/posts/hire10.jpg",
+      photo: "posts/hire10.jpg",
       date: "1 week ago",
       userId: 10,
       like: 104,
