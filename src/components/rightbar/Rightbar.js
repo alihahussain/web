@@ -1,16 +1,17 @@
 import React from 'react'
 import "./rightbar.css";
 import { Users } from '../../dummyData';
+const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 function Rightbar({profile}) 
 {
   const HomeRightbar=()=>{
     return(
       <>
       <div className='birthdayContainer'>
-          <img className='birthdayImg' src='assets/posts/camp.png'></img>
+          <img className='birthdayImg' src={`${PF}posts/camp.png`}></img>
           <span className='birthdayText'><b>seemal Arif</b> and <b> 3 other friends</b> posted for new hirings</span>
         </div>
-        <img className='rightbarAd' src='/assets/posts/ad2.jpg' alt=""/>
+        <img className='rightbarAd' src={`${PF}posts/ad2.jpg`} alt=""/>
       </>
     );
   };
@@ -45,64 +46,7 @@ function Rightbar({profile})
           </div>
     </div>
    
-    <h4 className="rightbarTitle">User friends</h4>
-        <div className="rightbarFollowings">
-          <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/profiles/abdullah.jpeg" />
-            <span className="rightbarFollowingName">Abcd</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img
-              src="assets/profiles/abdullah.jpeg"alt="" className="rightbarFollowingImg"/>
-            <span className="rightbarFollowingName">Abdullah Sohail</span>
-          </div>
-           
-          </div>
+        
     </>)
   }
   return (
