@@ -1,36 +1,49 @@
-import React from 'react'
-import "./share.css";
-import {PermMedia,Label,Room,EmojiEmotions} from "@mui/icons-material";
+import React from "react";
+import "./sidebar.css";
+import {RssFeed,
+    Chat,
+    PlayCircleFilledOutlined,
+    Group,
+    Bookmark,
+    HelpOutline,
+    WorkOutline,
+    Event,
+    School,} from "@mui/icons-material";
+import Friends from "../friends/Friends";
+import {Users} from "../../dummyData";
 
-export default function Share() {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-  return (
-    <div className="share">
-      <div className="shareWrapper">
-        <div className="shareTop">
-            <img className="shareProfileImg"src={`${PF}profiles/aliha.jpeg`} slt=""></img>
-            <input placeholder="What's in your mind" className='shareInput'></input>
-        </div>
-        <hr className='shareHr'/>
-        <div className="shareBottom">
-            <div className='shareOptions'>
-                <PermMedia htmlColor='tomato' className="ShareIcon"/>
-                <span className='shareOptionText'>Photo</span>
-            </div>
-            <div className='shareOptions'>
-                <Label htmlColor='blue'  className="ShareIcon"/>
-                <span className='shareOptionText'>Tag</span>
-            </div>
-            <div className='shareOptions'>
-                <EmojiEmotions htmlColor='goldenrod'  className="ShareIcon"/>
-                <span className='shareOptionText'>Feelings</span>
-            </div>
-            <div className='shareOptions'>
-                <Room  htmlColor='green' className="ShareIcon"/>
-                <span className='shareOptionText'>Location</span>
-            </div>
-       </div>
-    </div>
-    </div>
-  )
+export default function Sidebar()
+{
+    return(
+        <div className="sidebar">
+      <div className="sidebarWrapper">
+        <ul className="sidebarList">
+          <li className="sidebarListItem">
+            <RssFeed className="sidebarIcon" />
+            <span className="sidebarListItemText">Feed</span>
+          </li>
+          <li className="sidebarListItem">
+            <Bookmark className="sidebarIcon" />
+            <span className="sidebarListItemText">Bookmarks</span>
+          </li>
+          <li className="sidebarListItem">
+            <HelpOutline className="sidebarIcon" />
+            <span className="sidebarListItemText">Questions</span>
+          </li>
+          <li className="sidebarListItem">
+            <WorkOutline className="sidebarIcon" />
+            <span className="sidebarListItemText">Jobs</span>
+          </li>
+        </ul>
+        <hr className="sidebarHr" />
+        <ul className="sidebarFriendList">
+          {Users.map(u=>(
+            <Friends key= {u.id} user={u}/>
+          ))}
+        
+        </ul>
+         
+</div>
+</div>
+    )
 }
